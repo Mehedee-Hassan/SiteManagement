@@ -1,0 +1,307 @@
+/* The container */
+.container-chk {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    /*font-size: 22px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 4px;
+}
+
+/* Hide the browser's default checkbox */
+.container-chk input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eaeaea;
+    border: 1px #ea001c solid;
+}
+
+/* On mouse-over, add a grey background color */
+.container-chk:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-chk-red:hover input ~ .checkmark {
+    background-color: #da0900;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-chk input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.container-chk-red input:checked ~ .checkmark {
+    background-color: #f3000a !important;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-chk input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-chk .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.scrollbox-custom{
+    height: 300px;
+    overflow: auto;
+}
+
+.scrollbox-custom{
+    display: block;
+    height: 300px;
+    overflow: auto;
+}
+
+
+.input-text {
+    width: 100px;
+}
+.control-span{
+    display: none;
+
+}
+
+
+
+.green{
+    /*background-color: #d1ffec;*/
+    border: 2px dashed #06ff00;
+}
+
+.red{
+    border: 2px dashed #ff5700;
+
+}
+
+.input-text {
+    margin-left:10px;
+    padding: 3px;
+}
+
+input[type="date"] {
+    position: relative;
+    padding: 10px;
+    width: 200px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+}
+
+input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'FontAwesome';
+    content: '\f073';
+    /* This is the calendar icon in FontAwesome */
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    color: #999;
+}
+
+
+/*.panel .panel-heading{*/
+    /*font-family: 'Montserrat Alternates', sans-serif !important;*/
+    /*font-weight: 600;*/
+/*}*/
+
+/*.panel .panel-body{*/
+    /*font-family: 'Montserrat Alternates', sans-serif;*/
+/*}*/
+
+/*.site-name-title{*/
+    /*font-family: 'Rancho', cursive;*/
+/*}*/
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif !important;
+
+    /*font-family: 'Josefin Slab', serif;*/
+    /*font-family: 'Fauna One', serif;*/
+}
+
+.panel li{
+    /*font-family: Open Sans;*/
+}
+
+.shwo-view .panel .panel-heading {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.shwo-view .panel ol.myList {
+    list-style-type:lower-roman;
+}
+
+.shwo-view .panel li:before {
+   font-weight: 600;
+}
+
+.light-grey{
+    color: #dbdcdd;
+    text-align: center;
+}
+
+
+.list-group-item p{
+    color: #dbdcdd;
+    text-align: center;
+}
+
+.list-group-item a,a:hover,a:active{
+    text-decoration: none;
+    color: white !important;
+}
+
+.site-image img{
+    display: inline-block !important;
+
+}
+
+img.site-image-single{
+   background: red;
+}
+.normalpage .pagination li{
+    padding: 10px;
+    background: deepskyblue;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.image-thumbnail{
+    margin: 20px !important;
+    width: auto ;
+    height: 250px
+}
+
+button.update-image {
+    margin: -3px 0 0 0;
+}
+
+.image-container img{
+    display: inline-block;
+}
+
+.work-image-container img{
+    cursor: pointer;
+}
+
+.image-container-edit{
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #0099da;
+}
+.bottom-text
+{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/*.container-checkbox {*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    /*cursor: pointer;*/
+    /*font-size: 22px;*/
+    /*-webkit-user-select: none;*/
+    /*-moz-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*user-select: none;*/
+/*}*/
+
+/*!* Hide the browser's default checkbox *!*/
+/*.container-checkbox input {*/
+    /*position: absolute;*/
+    /*opacity: 0;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*!* Create a custom checkbox *!*/
+/*.checkmark {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*height: 25px;*/
+    /*width: 25px;*/
+    /*background-color: #eee;*/
+/*}*/
+
+/*!* On mouse-over, add a grey background color *!*/
+/*.container-checkbox:hover input ~ .checkmark {*/
+    /*background-color: #ccc;*/
+/*}*/
+
+/*!* When the checkbox is checked, add a blue background *!*/
+/*.container-checkbox input:checked ~ .checkmark {*/
+    /*background-color: #2196F3;*/
+/*}*/
+
+/*!* Create the checkmark/indicator (hidden when not checked) *!*/
+/*.checkmark:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*display: none;*/
+/*}*/
+
+/*!* Show the checkmark when checked *!*/
+/*.container-checkbox input:checked ~ .checkmark:after {*/
+    /*display: block;*/
+/*}*/
+
+/*!* Style the checkmark/indicator *!*/
+/*.container-checkbox .checkmark:after {*/
+    /*left: 9px;*/
+    /*top: 5px;*/
+    /*width: 5px;*/
+    /*height: 10px;*/
+    /*border: solid white;*/
+    /*border-width: 0 3px 3px 0;*/
+    /*-webkit-transform: rotate(45deg);*/
+    /*-ms-transform: rotate(45deg);*/
+    /*transform: rotate(45deg);*/
+/*}*/
